@@ -25,21 +25,18 @@ export default {
 <style scoped>
     ul {
         list-style-type: none;
-        margin-right: 0;
         padding: 0;
-        overflow: hidden;
     }
 
     ul {
         position: fixed;
         top: 3%;
-        width: 100%;
-        margin-left: 60%;
+        width: 80%;
     }
 
     li {
         display: inline;
-        float: left;
+        float: right;
         margin-right: 3%;
         font-family: 'Press Start 2P';
     }
@@ -49,6 +46,7 @@ export default {
         color: white;
         text-align: center;
         text-decoration: none;
+        float: left;
     }
 
     /* Change the link color to #111 (black) on hover */
