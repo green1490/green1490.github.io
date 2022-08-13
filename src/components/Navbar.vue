@@ -47,6 +47,7 @@ export default {
         text-align: center;
         text-decoration: none;
         float: left;
+        font-size: 1vw;
     }
 
     /* Change the link color to #111 (black) on hover */

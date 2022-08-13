@@ -25,11 +25,10 @@
     .sidenav a {
         padding: 20px 8px 20px 16px;
         text-decoration: none;
-        font-size: 25px;
         display: block;
     }
 
-    img {
-        max-width: 30%;
+    .sidenav img {
+        width: 30%;
     }
 </style>

@@ -9,6 +9,6 @@
 
 <style scoped>
     .home p {
-        font-size: 30px;
+        font-size: 2vw;
     }
 </style>
