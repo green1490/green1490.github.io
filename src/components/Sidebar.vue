@@ -1,10 +1,10 @@
 <template>
-    <div class="sidenav">
-        <a href="https://github.com/green1490" >
-            <img src="../assets/icons/github.png" alt="github icon">
+    <div class="sidenav top-20">
+        <a href="https://github.com/green1490" class="block">
+            <img src="../assets/icons/github.png" alt="github icon" class="pb-12 md:w-1/2 2xl:w-1/4 xl:w-1/3">
         </a>
         <a href="https://www.linkedin.com/in/krisztián-zámbó-2399631b5">
-            <img src="../assets/icons/linkedin.png" alt="linkedin icon">
+            <img src="../assets/icons/linkedin.png" alt="linkedin icon" class="pb-12 md:w-1/2 2xl:w-1/4 xl:w-1/3">
         </a>
     </div>
 </template>
@@ -13,22 +13,10 @@
     .sidenav {
         height: 100%; /* Full-height: remove this if you want "auto" height */
         width: 10%; /* Set the width of the sidebar */
+        margin-left: 2%;
         position: fixed; /* Fixed Sidebar (stay in place on scroll) */
         z-index: 1; /* Stay on top */
-        top: 60%; /* Stay at the top */
         left: 0px;
         overflow-x: hidden; /* Disable horizontal scroll */
-        padding-top: 20px;
-    }
-
-    /* The navigation menu links */
-    .sidenav a {
-        padding: 20px 8px 20px 16px;
-        text-decoration: none;
-        display: block;
-    }
-
-    .sidenav img {
-        width: 30%;
     }
 </style>
