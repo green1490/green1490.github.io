@@ -5,6 +5,14 @@
                 {{item}}
             </a>
         </li>
+        <li>
+            <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 font-medium rounded-lg text-[10px] lg:text-sm 2xl:text-xl">
+                Github
+            </button>
+            <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 font-medium rounded-lg text-[10px] lg:text-sm 2xl:text-xl">
+                LinkedIn
+            </button>
+        </li>
     </ul>
 </template>
 
@@ -24,7 +32,7 @@ export default {
 
 <style scoped>
     ul {
-        list-style-type: none;
+        
         padding: 0;
     }
 
@@ -32,21 +40,21 @@ export default {
         position: fixed;
         top: 3%;
         width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: baseline;
+        flex-wrap: wrap;
     }
 
     li {
-        display: inline;
-        float: right;
         margin-right: 3%;
         font-family: 'Press Start 2P';
     }
 
     li a {
-        display: block;
         color: white;
-        text-align: center;
         text-decoration: none;
-        float: left;
     }
 
     /* Change the link color to #111 (black) on hover */
