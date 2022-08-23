@@ -7,7 +7,7 @@ import About from '../components/About.vue'
 const routes = [
     {
         path: '/',
-        redirect:'Home'
+        redirect:'/home'
     },
     {
         path: '/home',
