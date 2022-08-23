@@ -6,9 +6,8 @@ import About from '../components/About.vue'
 
 const routes = [
     {
-        path: '/home',
-        name: 'Home',
-        component:Home
+        path: '/',
+        redirect:'Home'
     },
     {
         path: '/home',
