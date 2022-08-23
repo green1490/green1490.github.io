@@ -1,9 +1,9 @@
 <template>
     <ul>
         <li v-for="item in links" class="text-[10px] sm:text-base xl:text-lg 2xl:text-xl">
-            <a> 
+            <RouterLink :to="'/' + item.toLowerCase( )">
                 {{item}}
-            </a>
+            </RouterLink>
         </li>
         <li>
             <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 font-medium rounded-lg text-[10px] lg:text-sm 2xl:text-xl">
@@ -21,6 +21,7 @@ export default {
     data() {
         return {
             links: [
+                "Home",
                 "About",
                 "Experience",
                 "Project"
