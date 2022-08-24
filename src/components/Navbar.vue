@@ -34,6 +34,17 @@ export default {
             show: false,
             windowWidth: window.innerWidth
         }
+    },
+    mounted() {
+        window.addEventListener('resize', this.getWidth);
+    },
+    unmounted() {
+        window.removeEventListener('resize', this.getWidth);
+    },
+    methods: {
+        getWidth() {
+            this.windowWidth = window.innerWidth
+        }
     }
 }
 </script>
