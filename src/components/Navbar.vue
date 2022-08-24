@@ -1,17 +1,22 @@
 <template>
-    <ul>
-        <li v-for="item in links" class="text-[10px] sm:text-base xl:text-lg 2xl:text-xl">
+    <ul class="flex flex-col lg:flex-row justify-end content-end flex-wrap lg:flex-nowrap gap-8 w-9/12 lg:10/12">
+        <button @click="show = !show" v-if="windowWidth < 1024" class="self-end">
+            <svg viewBox="0 0 100 80" width="30" height="30" style="fill:rgb(255,255,255)">
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+            </svg>
+        </button>
+        <li v-for="item in links" class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
             <RouterLink :to="'/' + item.toLowerCase( )">
                 {{item}}
             </RouterLink>
         </li>
-        <li>
-            <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 font-medium rounded-lg text-[10px] lg:text-sm 2xl:text-xl">
-                Github
-            </button>
-            <button type="button" class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2 font-medium rounded-lg text-[10px] lg:text-sm 2xl:text-xl">
-                LinkedIn
-            </button>
+        <li class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+            <a>Github</a>
+        </li>
+        <li class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+            <a>LinkedIn</a>
         </li>
     </ul>
 </template>
@@ -25,7 +30,9 @@ export default {
                 "About",
                 "Experience",
                 "Project"
-            ]
+            ],
+            show: false,
+            windowWidth: window.innerWidth
         }
     }
 }
@@ -33,19 +40,13 @@ export default {
 
 <style scoped>
     ul {
-        
         padding: 0;
     }
 
     ul {
         position: fixed;
         top: 3%;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: right;
         align-items: baseline;
-        flex-wrap: wrap;
     }
 
     li {
