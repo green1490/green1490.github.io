@@ -7,7 +7,7 @@
                 <rect y="60" width="100" height="20"></rect>
             </svg>
         </button>
-        <TransitionGroup>
+        <TransitionGroup name="fade">
             <li v-for="item in links" class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
                 <RouterLink :to="'/' + item.toLowerCase( )">
                     {{item}}
@@ -66,13 +66,12 @@ export default {
         color: rgb(31, 168, 127);
     }
 
-    .v-enter-active,
-    .v-leave-active {
-        transition: opacity 0.5s ease;
+    .fade-enter, .fade-leave-to {
+        opacity: 0;
+        transform: translateX(2em);
     }
 
-    .v-enter-from,
-    .v-leave-to {
-        opacity: 0;
+    .fade-enter-active, .fade-leave-active {
+        transition: all .3s ease;
     }
 </style>
