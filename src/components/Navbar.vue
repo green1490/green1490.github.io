@@ -1,21 +1,21 @@
 <template>
     <ul class="flex flex-col lg:flex-row justify-end content-end flex-wrap lg:flex-nowrap gap-8 w-9/12 lg:10/12">
-        <button @click="show = !show" v-if="windowWidth < 1024" class="self-end">
+        <button @click="show = !show" class="self-end lg:hidden">
             <svg viewBox="0 0 100 80" width="30" height="30" style="fill:rgb(255,255,255)">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
                 <rect y="60" width="100" height="20"></rect>
             </svg>
         </button>
-        <li v-for="item in links" class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+        <li v-for="item in links" class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
             <RouterLink :to="'/' + item.toLowerCase( )">
                 {{item}}
             </RouterLink>
         </li>
-        <li class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+        <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
             <a>Github</a>
         </li>
-        <li class="text-[10px] lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+        <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
             <a>LinkedIn</a>
         </li>
     </ul>
