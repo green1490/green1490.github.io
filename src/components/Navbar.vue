@@ -8,15 +8,15 @@
             </svg>
         </button>
         <TransitionGroup name="fade">
-            <li v-for="item in links" class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+            <li v-for="item in links" class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" v-if="show || windowWidth >= 1024">
                 <RouterLink :to="'/' + item.toLowerCase( )">
                     {{item}}
                 </RouterLink>
             </li>
-            <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+            <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" v-if="show || windowWidth >= 1024">
                 <a>Github</a>
             </li>
-            <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl" v-if="show || windowWidth >= 1024">
+            <li class="text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" v-if="show || windowWidth >= 1024">
                 <a>LinkedIn</a>
             </li>
         </TransitionGroup>
