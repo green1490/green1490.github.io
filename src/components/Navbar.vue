@@ -14,10 +14,10 @@
                 </RouterLink>
             </li>
             <li class="cursor-pointer text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" v-if="show || windowWidth >= 1024">
-                <a>Github</a>
+                <a href="https://github.com/green1490">Github</a>
             </li>
             <li class="cursor-pointer text-[10px] md:text-xl lg:text-sm xl:text-lg 2xl:text-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" v-if="show || windowWidth >= 1024">
-                <a>LinkedIn</a>
+                <a href="https://www.linkedin.com/in/krisztián-zámbó-2399631b5">LinkedIn</a>
             </li>
         </TransitionGroup>
     </ul>
