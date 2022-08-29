@@ -44,13 +44,13 @@ export default {
 
     ul {
         padding: 0;
-        background-color: black;
     }
 
     ul {
         position: fixed;
         top: 3%;
         align-items: baseline;
+        z-index: 2;
     }
 
     li {

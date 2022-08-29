@@ -1,13 +1,7 @@
 @import "./base.css";
 
 #app {
-  padding: 2rem;
   margin-left: 10%; /* Same as the width of the sidebar */
-}
-
-body {
-  display: flex;
-  place-items: center;
 }
 
 #app {
@@ -15,3 +9,10 @@ body {
   padding: 0 2rem;
 }
 
+body {
+  display: flex;
+  /* place-items: center; */
+  /* flex-direction: column; */
+  padding-top: 5%;
+  place-items: center;
+}
