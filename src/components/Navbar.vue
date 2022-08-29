@@ -1,6 +1,6 @@
 <template>
-    <ul class="flex flex-col lg:flex-row justify-end content-end flex-wrap lg:flex-nowrap gap-8 w-9/12 lg:10/12">
-        <button @click="show = !show" class="self-end lg:hidden">
+    <ul class="flex flex-col lg:flex-row lg:justify-end lg:content-end  flex-wrap lg:flex-nowrap gap-8 w-9/12 lg:10/12">
+        <button @click="show = !show" class=" lg:hidden">
             <svg viewBox="0 0 100 80" width="30" height="30" style="fill:rgb(255,255,255)">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
@@ -41,8 +41,10 @@ export default {
 </script>
 
 <style scoped>
+
     ul {
         padding: 0;
+        background-color: black;
     }
 
     ul {
@@ -52,7 +54,6 @@ export default {
     }
 
     li {
-        margin-right: 3%;
         font-family: 'Press Start 2P';
     }
 
